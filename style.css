@@ -1,0 +1,136 @@
+#body #grimoir #kpw-mainButton {
+  border-radius: 0 4px 4px 0;
+  font: 14px/130% Pacifico;
+  text-decoration: none;
+  text-align: right;
+  position: absolute;
+  right: -38px;
+  top: 89px;
+  width: 55px;
+  height: 37px;
+  border-top: solid thin #B22;
+  border-right: solid thin #801;
+  border-bottom: solid thin #501;
+  padding: 3px 7px 15px 3px;
+  transform: skew(-2deg);
+  background-color: #902;
+  background-image:
+    linear-gradient(92deg, #801 4px, transparent 5px),
+    linear-gradient(169deg, #A02 61%, transparent 62%);
+  background-position: center;
+  color: #FDC;
+  text-shadow:
+    -1px -1px #701,
+    1px -1px #701,
+    -1px 1px #701,
+    1px 1px #701;
+  box-shadow: 1px 3px rgba(0, 0, 0, 0.3);
+}
+#body #grimoir #kpw-mainButton:hover {
+  padding-left: 14px;
+  right: -49px;
+}
+#kpw-mainButton:focus, #kpw-mainButton:active {
+  outline: none;
+}
+#kpw-mainButton:focus::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 66px;
+  height: 57px;
+  transform: skew(2deg);
+  content: "\00A0";
+  outline: dotted thin #F62;
+  pointer-events: none;
+}
+#kpw-mainButton:hover::before {
+  outline-color: #9FFF22;
+  width: 77px;
+}
+#kpw-container {
+  position: absolute;
+  width: 612px;
+  height: 418px;
+  top: 72px;
+  left: 48px;
+  padding-top: 6px;
+  background: url('//data.naturalchimie.com/img/skin/grim_bg.jpg');
+  background-position: -43px -17px;
+  font-size: 85%;
+}
+#kpw-container .page {
+  position: relative;
+  width: 281px;
+  height: 410px;
+  color: #1A1612;
+}
+#kpw-container .page.double {
+  padding: 0 12px;
+  width: calc(100% - 24px);
+}
+#kpw-container .page.left {
+  float: left;
+  padding-left: 12px;
+}
+#kpw-container .page.right {
+  float: right;
+  padding-right: 12px;
+}
+#kpw-container .page h3 {
+  margin: 0 0 0.5em;
+  border-bottom: solid 2px #1A1612;
+  letter-spacing: 1px;
+  padding: 0;
+  color: #1A1612;
+}
+#kpw-container .page h3:first-letter {
+  background: #1A1612;
+  padding: 0 0.5ex;
+  margin: 0 1px 0 0;
+  letter-spacing: 0;
+  color: #B39A7F;
+  font-size: 120%;
+  vertical-align: bottom;
+}
+#kpw-container .page p {
+  margin: 1em 0;
+  padding: 0;
+}
+#kpw-container .page ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 330px;
+  overflow: auto;
+  border: solid 1px #B39A7F;
+}
+#kpw-container .page li a {
+  display: block;
+  font: bold 100% Fondamento;
+  text-shadow:
+    -1px -1px #654,
+    -1px 1px #654,
+    1px -1px #6 54,
+    1px 1px #654,
+    1px 1px 1px #432;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  border-width: 0 1px 1px 0;
+  background: rgba(0, 0, 0, 0.1);
+  color: white;
+  margin: 1px;
+  text-decoration: none;
+  padding: 0 1ex;
+}
+#kpw-container .page li a span {
+  display: inline-block;
+  min-width: 33%;
+}
+#kpw-container .page li a img {
+  vertical-align: bottom;
+  padding: 0 0.5ex;
+  padding-bottom: 2px;
+}
+#kpw-container .page li a:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
